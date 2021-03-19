@@ -1,0 +1,640 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+body {
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+} 
+
+li {
+    list-style: none;
+}
+
+/*header*/
+nav {
+    padding: 15px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px;
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.wrapper {
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-logo-1 {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.img-logo-2 {
+    width: 100px;
+    margin-left: -20px;
+}
+
+nav .content-nav {
+  display: flex;
+  line-height: 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin-left: 120px;
+}
+
+nav .content-nav ul {
+    display: flex;
+}
+
+nav .content-nav ul li a {
+    text-decoration: none;
+    color: white ;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+nav .content-nav ul li a:hover {
+    color: rgb(233, 48, 48);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    
+}
+
+.content-nav form {
+    position: relative;
+}
+
+.content-nav form input {
+
+    background: white;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+}
+
+.content-nav form button {
+    border: none;
+    background: white;
+    padding: 5.9px;
+    outline: none;
+    border-radius: 12px;
+    top: 2px;
+    right: 2px;
+    position: absolute;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-image: url("anh nen/yasuo.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-clip: padding-box;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-body {
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    border-top: 1px solid rgb(185, 181, 181);
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid rgb(185, 181, 181);
+    padding: 1rem;
+}
+
+.modal-footer>:not(:first-child) {
+    margin-left: .25rem;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: white;
+    border-color: rgb(179, 173, 173);
+}
+
+.btn-primary {
+    color: black;
+    background-color: rgb(34, 201, 223);
+    border-color: rgb(34, 201, 223);
+}
+
+.btn-primary:hover {
+    background-color:rgba(34, 201, 223, 0.8) ;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(255, 0, 34);
+    color: white;
+    border-color: rgb(255, 0, 34);
+}
+
+.modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(185, 181, 181);
+    padding: 1rem;
+}
+
+h5.modal-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.close {
+    color: rgb(185, 181, 181);
+    font-size: 29px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cart {
+    font-size: 15px;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline:  none;
+    margin-left: 1rem;
+    padding: 20px;
+    cursor: pointer;
+    background-color: black;
+    
+}
+
+.content-nav-1{
+    display: flex;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+#cart:hover {
+    background-color: rgb(255, 0, 34);
+}
+
+/* wrapper */
+.wrapper {
+    padding: 2rem;
+}
+
+.products ul {
+    display: inline-block;
+}
+
+.products ul .main-product {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: block;
+    float: left;
+    width: 23.6%;
+}
+
+.products ul .img-product img {
+    width: 100%;
+}
+
+.content-product .content-product-h3 {
+    padding: .5rem;
+    overflow: hidden;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 19px;
+    margin: 0 0 5px;
+}
+
+.content-product .content-product-deltals {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    text-align: center;
+} 
+
+.content-product .content-product-deltals .price {
+    color:white;
+    font-weight: 700;
+    margin-right: 1rem;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.content-product .content-product-deltals .price .money {
+    vertical-align: middle;
+}
+
+.content-product .content-product-deltals .btn-cart {
+    background-image: linear-gradient(to right, rgb(65, 75, 218),rgb(112, 61, 206));
+    background-repeat: no-repeat;
+    border-color: rgb(58, 58, 199);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.content-product .content-product-deltals .btn-cart:hover {
+    background-image: linear-gradient(to right, rgb(15, 29, 231),rgb(91, 15, 231));
+}
+
+.main-product:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+/* footer */
+.footer-item {
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+    padding: .5rem 2rem;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-item .img-footer {
+    align-items: center;
+    display: flex;
+}
+
+.footer-item .social-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer-item .social-footer li a {
+    color: rgba(255, 255, 255, 0.418);
+    font-size: 3rem;
+}
+
+.footer-item .social-footer li a:hover {
+    color:rgb(18, 151, 133);
+}
+
+.footer-item .social-footer>:not(:first-child) {
+    margin-left: .5rem;
+}
+
+/* cart */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color:white 
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color:white;
+    margin-left: .5rem;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: rgb(209, 100, 100);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: rgb(231, 71, 71);
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(85, 205, 221);
+    background-color: white;
+    color: rgb(27, 27, 27);
+    padding: 0;
+    text-align: center;
+    font: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color:white;
+    font-size: 1.1em;
+}
+
+
+.container {
+    display: flex; 
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid white;
+}
+
+.cot-1 {
+    width: 25%;
+    margin-left: 15px;
+}
+
+.cot-2 {
+    width: 20%;
+}
+
+.cot-3 {
+    width: 30%;
+}
+
+.cot-4 {
+    width: 25%;
+}
+
+
+.input-group {
+    margin-top: 20px;
+}
+
+.title-footer {
+    border-bottom: 2px solid white;
+    margin-right: 20px;
+    font-family:  sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.title-footer-li ul li {
+    padding-right: 50px;
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.newSteller-signup ul li{
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.newSteller-signup form .input-group{
+    position: relative;
+}
+
+.newSteller-signup form .input-group input{
+    border: none;
+    background: white;
+    padding: 8px;
+    outline: none;  
+    width: 80%; 
+}
+
+.newSteller-signup form .input-group button{
+    border: none;
+    background: white;
+    padding: 6.6px;
+    outline: none;
+    margin-left: -15px;
+    border-radius: 0%;
+    background-color: rgb(18, 151, 133);
+    position:absolute;
+}
+
+.main-product-search {
+    display: flex;
+}
+
+.content-product-search {
+    margin-left: 30px;
+}
+
+.content-product-deltals-search {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.search {
+    margin-left: 50px;
+    font-size: 30px ;
+    color: white;
+}
+
+.content-product-deltals-search button {
+    background-color: rgb(189, 9, 9);
+    border-radius: 12px;
+}
+
+.content-product-h3-search {
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.money-search{
+    font-size: 50px;
+    color: rgb(189, 9, 9);
+}
+
+.modal-header-pay {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.modal-title-pay {
+    font-weight: normal;
+}
+
+.cart-header-pay {
+    font-size: 20px;
+}
+
+.cart-column-pay {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.cart-row-pay {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.cart-items-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.cart-fix {
+    font-size: 50px;
+    margin-left: -130px;
+    color:rgb(189, 9, 9);
+}
+
+.cart-quantity-input-pay {
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    padding: 0;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-danger-pay {
+    color: white;
+    background-color: rgb(189, 9, 9);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-danger-pay:hover {
+    background-color: rgb(240, 39, 39);
+}
+
+.cart-total-pay{
+    text-align: end;
+    margin-top: 10px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.cart-total-title-pay {
+    font-weight: bold;
+    margin-right: 60px;
+}
