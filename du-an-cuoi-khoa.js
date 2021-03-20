@@ -76,19 +76,14 @@ function createDom(){
         <div class="price">
           <span class="money">${product[y].price = price[y]}đ</span>
         </div>
-        <button type="button" class="btn btn-cart">Mua Ngay</button>
+        <button type="button" class="btn btn-cart" >Mua Ngay</button>
       </div>
     </div>
   </li>
   `
         } 
   document.getElementById("new-product").innerHTML = html;
-}
-
-createDom();
-  
-//them so luong vao gio
-let add_cart = document.getElementsByClassName("btn-cart");
+  let add_cart = document.getElementsByClassName("btn-cart");
 for(let i = 0; i < add_cart.length; i++){
     let add = add_cart[i];
     add.addEventListener("click", function(event) {
@@ -102,6 +97,11 @@ for(let i = 0; i < add_cart.length; i++){
         updatecart();
     })
 }
+}
+
+createDom();
+  
+//them so luong vao gio
 
 function addItemToCart(title, price, img) {
     let cartRow = document.createElement('div')
@@ -196,7 +196,7 @@ document.getElementById("name-1").addEventListener('keydown',function (event) {
     </div>
       `
     }
-    document.getElementById("item-search").innerHTML= html;
+    document.getElementById("new-product").innerHTML= html;
     document.getElementById("new-btn").addEventListener("click", function(event){
       let button = event.target;
       let product = button.parentElement.parentElement;
@@ -206,7 +206,7 @@ document.getElementById("name-1").addEventListener('keydown',function (event) {
       addItemToCart(title,price,img)
       modal.style.display = "block";
       updatecart();
-    })  
+    })
   }
 
   let btn_menu = document.getElementById("btnmenu");
