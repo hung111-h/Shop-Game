@@ -20,6 +20,7 @@ close_footer.onclick = function () {
 }
 order.onclick = function () {
     alert("Cảm Ơn Quý Khách");
+    modal.style.display = "none"
 }
 
 // update cart 
@@ -99,9 +100,7 @@ for(let i = 0; i < add_cart.length; i++){
 }
 }
 
-createDom();
-  
-//them so luong vao gio
+createDom()
 
 function addItemToCart(title, price, img) {
     let cartRow = document.createElement('div')
