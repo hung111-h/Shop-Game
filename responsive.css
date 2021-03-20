@@ -13,7 +13,10 @@
   }
   
   .nav-mobile .item_menu {
-    background: white;
+    background-image: url("anh nen/hinh-nen-may-tinh-1.jpg") ;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -22,17 +25,17 @@
   }
   
   .item_menu ul li a {
-    color: #43433e;
+    color: white;
     display: block;
     padding: .5rem 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight:500;
     letter-spacing: 0.05rem;
   }
   
   .item_menu ul li a:hover {
-    color: rgb(255, 0, 34);
+    color: rgb(64, 227, 233);
   }
   
   .item_menu form {
