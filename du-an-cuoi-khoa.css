@@ -565,13 +565,14 @@ h5.modal-title {
 
 .modal-header-pay {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     font-size: 50px;
     padding: 10px;
 }
 
 .modal-title-pay {
     font-weight: normal;
+    color: white;
 }
 
 .cart-header-pay {
@@ -587,8 +588,9 @@ h5.modal-title {
 .cart-row-pay {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
+    color: white;
 }
 
 .cart-items-pay {
@@ -596,7 +598,7 @@ h5.modal-title {
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .cart-fix {
